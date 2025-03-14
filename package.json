@@ -8,8 +8,7 @@
   "stage": "set NODE_ENV=staging&& ts-node-dev --respawn --transpile-only src/index.ts",
   "build": "tsc",
   "prod": "node build/src/index.js",
-  "start": "node build/src/index.js",
-  "vercel-build": "npm run build"
+  "start": "node build/src/index.js"
 },
   "author": "",
   "license": "ISC",
