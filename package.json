@@ -9,7 +9,7 @@
   "build": "tsc",
   "prod": "node build/src/index.js",
   "start": "node build/src/index.js",
-  "vercel-build": "tsc"
+  "vercel-build": "npm run build"
 },
   "author": "",
   "license": "ISC",
