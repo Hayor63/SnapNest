@@ -2,13 +2,15 @@
   "name": "snapnest",
   "version": "1.0.0",
   "main": "build/src/index.js",
-  "scripts": {
-    "test": "set NODE_ENV=test&& npx jest --watchAll",
-    "dev": "set NODE_ENV=development&& ts-node-dev --respawn --transpile-only src/index.ts",
-    "stage": "set NODE_ENV=staging&& ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "prod": "node build/src/index.js"
-  },
+ "scripts": {
+  "test": "set NODE_ENV=test&& npx jest --watchAll",
+  "dev": "set NODE_ENV=development&& ts-node-dev --respawn --transpile-only src/index.ts",
+  "stage": "set NODE_ENV=staging&& ts-node-dev --respawn --transpile-only src/index.ts",
+  "build": "tsc",
+  "prod": "node build/src/index.js",
+  "start": "node build/src/index.js",
+  "vercel-build": "tsc"
+},
   "author": "",
   "license": "ISC",
   "description": "",
