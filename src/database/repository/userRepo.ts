@@ -24,6 +24,7 @@ export default class UserRepo {
       return await UserModel.findOne({ email });
     };
 
+    
   static findByUserName: (
     userName: string
   ) => Promise<DocumentType<User> | null> = async (userName) => {

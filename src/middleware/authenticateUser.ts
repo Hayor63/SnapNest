@@ -5,12 +5,16 @@ interface AuthenticatedRequest extends Request {
   user?: any;
 }
 
-const authenticateUser = (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+const authenticateUser = (
+  req: AuthenticatedRequest,
+  res: Response,
+  next: NextFunction
+) => {
   if (!res.locals.user) {
     return APIResponse.error("Access token is required").send(res);
   }
 
-  req.user = res.locals.user; 
+  req.user = res.locals.user;
 
   next();
 };
